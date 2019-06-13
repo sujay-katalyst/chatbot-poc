@@ -1,0 +1,11 @@
+<div class="container">
+  
+  <div class="utContainer">
+    <h3>What can you talk about</h3>
+    <div class="scrolly">
+      <% @utterances.each do |u| %>
+        <div class='ut'><%= u %></div>  
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  host: localhost
+  database: lex_faq_dev
+  encoding: unicode
+  username: postgres
+  password: postgres
+  
+test: &test
+  adapter: postgresql
+  host: localhost
+  database: lex_faq_test
+  encoding: unicode
+  username: postgres
+  password: postgres
