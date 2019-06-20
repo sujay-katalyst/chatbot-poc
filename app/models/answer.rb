@@ -93,7 +93,6 @@ class Answer < ApplicationRecord
     encoded_id.each do |letter|
       decoded_id << ID_ALPHA_MAPPER.index(letter)
     end
-    Rails.logger.info "//////// id == #{decoded_id}"
     id = decoded_id.join("").to_i
 
     self.find_by(id: id)
