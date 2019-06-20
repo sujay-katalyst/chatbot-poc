@@ -9,7 +9,7 @@ class Admin::AnswersController < AdminController
     answer.utterances = answer_params["utterances"].split(",")
     
     if answer.save
-      answer.push_to_lex
+      # answer.push_to_lex
       flash[:success] = "#{answer.name} successfully created!"
     else
       flash[:error] = answer.errors.full_messages.join(",")
